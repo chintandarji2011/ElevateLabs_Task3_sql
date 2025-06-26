@@ -17,11 +17,14 @@ The goal of this task is to practice extracting data from one or more tables usi
 ## Sample Table Used
 
 ```sql
+-- create 'departments'table
 CREATE TABLE departments
 (
   dep_id INT PRIMARY KEY,
   dep_name VARCHAR(50) NOT NULL
 );
+
+-- create 'employees' table
 CREATE TABLE employees
 (
   emp_id INT PRIMARY KEY,
@@ -31,13 +34,15 @@ CREATE TABLE employees
   hire_date DATE
 );
 
+-- insert data in 'departments' table
 INSERT INTO departments
 VALUES 
 (1,'HR'),(2,'Account'),(3,'IT');
 
+-- insert data in 'employees' table
 INSERT INTO employees (emp_id, emp_name, dep_id, salary, hire_date)
 VALUES
-(1,'Rahesj Jadhav', 3, 60000, '2015-04-12'),
+(1,'Rajesh Jadhav', 3, 60000, '2015-04-12'),
 (2,'Krunal Patil', 3, 45000, '2022-05-23'),
 (3,'Swami Rajnathan', 2, 34000, '2023-02-22'),
 (4,'Harsh Sharma', 1, 75000, '2018-04-11'),
