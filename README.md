@@ -51,7 +51,7 @@ REFERENCES departments(dep_id);
 ---
 ## Deliverables
 An SQL script demonstrating the use of:
-- `SELECT` (all columns and specific columns)
+1.`SELECT` (all columns and specific columns)
   > Step1. Use `Select *` and `specific columns`
 
 ```sql
@@ -65,7 +65,7 @@ SELECT e.emp_id, e.emp_name,d.dep_name, e.salary, e.hire_date
 FROM employees e
 INNER JOIN departments d ON e.dep_id = d.dep_id;
 ```
-- `WHERE`, `AND`, `OR`, `LIKE`, `BETWEEN`
+2. `WHERE`, `AND`, `OR`, `LIKE`, `BETWEEN`
   > Step2.Apply `WHERE`, `AND`, `OR`, `LIKE`, `BETWEEN....AND`
 ```sql
 -- WHERE + AND
@@ -87,7 +87,7 @@ WHERE emp_name LIKE 'S%';
 SELECT * FROM employees
 WHERE salary BETWEEN 40000 AND 70000;
 ```
-- `ORDER BY` for sorting
+3. `ORDER BY` for sorting
 > Step3.Sort with `ORDER BY`
 ```sql
 -- Ascending
@@ -97,7 +97,7 @@ ORDER BY salary;
 SELECT * FROM employees
 ORDER BY salary DESC;
 ```
-- `LIMIT` to restrict number of results
+4. `LIMIT` to restrict number of results
 ```sql
 -- LIMIT -- Top two highst salary
 SELECT * FROM employees
