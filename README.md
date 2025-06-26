@@ -66,7 +66,7 @@ SELECT e.emp_id, e.emp_name,d.dep_name, e.salary, e.hire_date
 FROM employees e
 INNER JOIN departments d ON e.dep_id = d.dep_id;
 ```
--2. `WHERE`, `AND`, `OR`, `LIKE`, `BETWEEN`
+- 2. `WHERE`, `AND`, `OR`, `LIKE`, `BETWEEN`
   > Step2.Apply `WHERE`, `AND`, `OR`, `LIKE`, `BETWEEN....AND`
 ```sql
 -- WHERE + AND
