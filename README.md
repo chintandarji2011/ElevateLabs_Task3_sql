@@ -88,7 +88,7 @@ SELECT * FROM employees
 WHERE salary BETWEEN 40000 AND 70000;
 ```
 - `ORDER BY` for sorting
-> Step3.Sort with ORDER BY
+> Step3.Sort with `ORDER BY`
 ```sql
 -- Ascending
 SELECT * FROM employees
