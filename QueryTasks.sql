@@ -34,7 +34,7 @@ ORDER BY salary;
 -- Descending
 SELECT * FROM employees
 ORDER BY salary DESC;
--- LIMIT -- Top two highst salary
+-- LIMIT -- Top two highest salary
 SELECT * FROM employees
 ORDER BY salary DESC
 LIMIT 2;
